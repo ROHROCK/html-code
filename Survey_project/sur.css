@@ -11,3 +11,13 @@
 #input-padding{
   padding-top: 20px;
 }
+#survey-form{
+  padding-left:100px;
+  text-align:left;
+}
+label{
+  padding-right:10px;
+}
+input{
+  width:200px;
+}
