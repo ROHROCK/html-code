@@ -16,15 +16,23 @@
     <div id="inner-table">
       <p id="description">Please let us know how we can improve ourself</p>
       <form id="survey-form">
-        <div id="input-padding">
-          <text>*Name: <input id="name" type="text" required></input>
+          <div id="input-padding">
+            <label id="name-label">*Name: <input id="name" type="text" required placeholder="John"></input>
             </div>
-            <div id="input-padding">
-              <text>*Email: <input id="email" type="email" required></input>
-              </div>
-            <div id="input-padding">
-              <text>*Age: </text><input type="number"></input>
-        </div>
+          <div id="input-padding">
+              <label id="email-label">*Email: <input id="email" type="email" required placeholder="john@gmail.com"></input>
+          </div>
+          <div id="input-padding">
+              <label id="number-label">*Age: </label><input id="number" type="number" min = 0 max = 50 placeholder="25"></input>
+          </div>
+
+          <div id="input-padding">
+              <label id=""></label>
+              <select>
+                  <option value="option 1">Option_1</option>
+                  <option value="option 2">Option_2</option>
+              </select>
+          </div>
       </form>
     </div>
   </div>
