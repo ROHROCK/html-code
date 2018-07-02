@@ -15,26 +15,81 @@
     <h1 id="title"> <small>Survey Form</small></h1>
     <div id="inner-table">
       <p id="description">Please let us know how we can improve ourself</p>
+      <!-- Survey form code START-->
       <form id="survey-form">
-          <div id="input-padding">
-            <label id="name-label">*Name: <input id="name" type="text" required placeholder="John"></input>
-            </div>
-          <div id="input-padding">
-              <label id="email-label">*Email: <input id="email" type="email" required placeholder="john@gmail.com"></input>
-          </div>
-          <div id="input-padding">
-              <label id="number-label">*Age: </label><input id="number" type="number" min = 0 max = 50 placeholder="25"></input>
-          </div>
 
-          <div id="input-padding">
-              <label id=""></label>
-              <select>
+        <div id="label-form">
+          <label id="name-label">*Name: </label>
+        </div>
+        <div id="input-form">
+          <input id="name" type="text" required placeholder="Enter name"></input>
+        </div>
+
+        <div id="label-form">
+          <label id="email-label">*Email: </label>
+        </div>
+        <div id="input-form">
+          <input id="email" type="email" required placeholder="Enter email"></input>
+        </div>
+
+        <div id="label-form">
+          <label id="number-label">*Age: </label>
+        </div>
+        <div id="input-form">
+          <input id="number" type="number" min=0 max=5 0 placeholder="Enter age"></input>
+        </div>
+
+        <div id="label-form">
+          <label id="">Which option best describes your current role?</label>
+        </div>
+        <div id="input-form">
+          <select id="dropdown">
                   <option value="option 1">Option_1</option>
                   <option value="option 2">Option_2</option>
-              </select>
+          </select>
+        </div>
+        <!-- Radio group code START -->
+          <div id="label-form">
+            <label>How likely are you going to recommend anyone about freeCodeCamp:</label>
+        </div>
+          <div id="input-form">
+              <div>
+                <input type="radio" value="1" name="radiobutton" value="Definately"></input>
+                <label>Definately</label>
+              </div>
+                <div>
+                <input type="radio" value="2" name="radiobutton" id="Maybe" ></input>
+                <label>Maybe</label>
+              </div>
+              <div>
+                <input type="radio" value="2" name="radiobutton" id="Not sure" ></input>
+                <label>Not sure</label>
+            </div>
           </div>
-      </form>
-    </div>
+        <!-- Radio group code END -->
+        
+        <!-- Checkbox code start -->
+        <div id="label-form">
+          <label>Choose what you would like us to improve on: </label>
+        </div>
+        <div id="input-form">
+          <div><input type="checkbox" value="1">Layout</input></div>
+          <div><input type="checkbox" value="2">Coding Challenges</input></div>
+          <div><input type="checkbox" value="3">Tutorial</input></div>
+        </div>
+        <!-- Checkbox code ends -->
+        <div id="label-form">
+          <label>Anything else: </label>
+        </div>
+        <div id="input-form">
+            <textarea rows="4" cols="50"></textarea>
+        </div>
+    <div>
+    <button id="submit">Submit</button>
+  </div>
+    </form>
+    <!-- Survey form code ENDS-->
+  </div>
   </div>
 </body>
 

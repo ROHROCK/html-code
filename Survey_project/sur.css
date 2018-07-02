@@ -1,23 +1,31 @@
-#main{
-  text-align:center;
-  padding:15px;
-  background-color:#C0D6E4;
+#main {
+  text-align: center;
+  padding: 15px;
+  background-color: #C0D6E4;
 }
-#inner-table{
+
+#inner-table {
   background-color: #FFF;
-  display:block;
-  padding: 10px;
+  display: block;
 }
-#input-padding{
-  padding-top: 20px;
+
+#survey-form {
+  display:grid;
+  grid-template-columns: auto auto;
+  grid-gap: 10px 10px;
+  grid-template: "name-label name-input";
+
 }
-#survey-form{
-  padding-left:100px;
-  text-align:left;
+
+#radiogroup{
+  display: grid;
 }
-label{
-  padding-right:10px;
+#collection{
+  padding: 20px;
 }
-input{
-  width:200px;
+#label-form{
+  align-self:center;
+}
+#input-form{
+  justify-self:start;
 }
